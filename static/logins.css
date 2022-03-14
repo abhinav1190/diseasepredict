@@ -1,0 +1,11 @@
+.logn{
+    text-align: center;
+    margin-top: 10pc;
+    background-color: #98d7c2;
+    width: 30pc;
+    height: 20pc;
+    margin-left: 30pc;
+}
+.logn input[id="eml"]{
+    margin-top: 90px;
+}

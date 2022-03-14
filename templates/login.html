@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: #ddffe7;
+            }
+        </style>
+    </head>
+    <link rel="stylesheet" href="{% static 'logins.css' %}">
+    <body>
+        <form method="post" action="{% url 'sqldta' %}" class="logn" >
+            {% csrf_token %}
+            <input type="email" name="eml" id="eml" placeholder="email" ><br><br>
+            <input type="password" name="pass" id="pass" placeholder="password" ><br><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

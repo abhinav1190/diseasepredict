@@ -1,0 +1,242 @@
+.hdr{
+  background-color: #167D7F;
+  height: 8pc;
+  padding: 10px;
+  width: 100%;
+  display: block;
+  margin-left: -10px;
+  margin-top: -9px;
+  
+}
+
+.hdr h1{
+  direction: ltr;
+  margin-left: 0px;
+  
+}
+.lside ul li{
+  display: inline;
+  opacity: 0.8;
+  margin-right: 10px;
+  white-space: 5px;
+  font-size: 15px;
+  text-decoration: none;
+  color: greenyellow;
+  
+  
+  
+}
+.lside ul li button{
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #29A0B1;
+  border: #29A0B1;
+  color: aliceblue;
+}
+.lside ul li:active{
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+
+
+/*-----------------------------------------------------------------*/
+  
+  .define {
+      margin-left: 80px;
+      margin-right: 80px;
+      margin-top: 50px;
+      text-align: center;
+      font-size: large;
+  }
+/*
+  .hombtns {
+      
+      
+      background-image:url('hsp.jpg');
+      height: 800px;
+      
+      
+  }*/
+  body{
+    background-color: #DDFFE7;
+}
+/*
+.symp1{
+    
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    margin-top: 200px;
+    margin-left: 550px;
+    padding: 15px 100px;
+    text-align: center;
+    
+    
+    
+}
+.symp2{
+    
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    margin-left: 550px;
+    padding: 15px 100px;
+    text-align: center;     */
+    /*display: inline-block;*/   /*
+    margin-top: 10px;
+    
+    
+}
+.symp3{
+    
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    margin-left: 550px;
+    padding: 15px 100px;
+    text-align: center;
+    margin-top: 10px;
+}
+.symp4{
+    
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    margin-left: 550px;
+    padding: 15px 100px;
+    text-align: center;
+    margin-top: 10px;
+}
+.symp5{
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    margin-left: 550px;
+    padding: 15px 100px;
+    text-align: center;
+    margin-top: 10px;
+    
+}*/
+.hombtns select{
+  width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #B1D8B7;
+    border: 1px #B1D8B7 ;
+    display: inline;
+    text-align: center;
+}
+.hombtns{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.submit{
+    
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #167D7F;
+  border: #167D7F;
+  margin-bottom: 50px;
+  
+    
+}
+
+
+.sgsinfo{
+  background-color: #167D7F;
+  width: 50pc;
+  margin-left: 25%;
+  border-radius: 5px;
+}
+
+
+.sgsinfo  ul li{
+  display: inline;
+}
+.sgsinfo{
+  text-align: center;
+}
+.sgsinfo label[class="nm"]{
+  margin-left: -350px;
+}
+.sgsinfo label[class="fedres"]{
+  margin-left: -320px;
+}
+.sgsinfo label[class="fsgns"]{
+  margin-left: -310px;
+}
+.sgsinfo input[class="edres"]{
+  width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #B1D8B7;
+    border: 1px #B1D8B7 ;
+    display: inline;
+    text-align: center;
+}
+
+.sgsinfo input[class="sgsns"]{
+  width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #B1D8B7;
+    border: 1px #B1D8B7 ;
+    display: inline;
+    text-align: center;
+}
+.sgsinfo input[class="fn"] {
+  width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #B1D8B7;
+    border: 1px #B1D8B7 ;
+    display: inline;
+    text-align: center;
+    margin-left: -30px;
+}
+.sgsinfo input[class="ln"] {
+  width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #B1D8B7;
+    border: 1px #B1D8B7 ;
+    display: inline;
+    text-align: center;
+}
+.sgsinfo button{
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #29A0B1;
+  border: #167D7F;
+  margin-bottom: 50px;
+}
+.sgsinfo label{
+  color: aliceblue;
+}
+
+.ftr{
+  margin-top: 200px;
+  height: 10pc;
+  background-color: #167D7F;
+}
+.ftrr{
+  margin-top: -40px;
+  direction: rtl;
+  margin-right: 50px;
+}
