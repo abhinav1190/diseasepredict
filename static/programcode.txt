@@ -94,3 +94,11 @@ git remo
 git remote add origin https://github.com/abhinav1190/diseasepredict.git
 git branch -M main
 git commit -m "some init msg"
+
+
+#update code on github
+git add .
+git commit -m "my changes"
+git remote add origin https://github.com/abhinav1190/diseasepredict.git
+git push -u origin main   (if it is master then main-->master)
+
