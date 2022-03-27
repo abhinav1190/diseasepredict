@@ -139,6 +139,7 @@
     display: inline;
     text-align: center;
 }
+
 .hombtns{
   margin-top: 50px;
   text-align: center;
@@ -218,7 +219,7 @@
     display: inline;
     text-align: center;
 }
-.sgsinfo button{
+.sgsinfo input[type="submit"]{
   width: 100px;
   height: 40px;
   border-radius: 5px;

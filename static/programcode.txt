@@ -1,0 +1,96 @@
+
+
+# setting up django
+pip install django
+pip install virtualenvwrapper-win
+~mkvirtualenv myaapp(or any name) / pip install --user virtualenv 
+py -m venv <name_of_env>
+.\<name_of_env)>\Scripts\activate
+pip install django
+# (myprojectjango) C:\Users\abhi\djangotutorial> #it means you are in virtual name_of_env
+django-admin  startproject <name_of_project>
+dir 
+cd <name_of_project>
+#deactivate
+
+
+
+# to make sub app
+python manage.py startapp  <name_new_sub_app>
+
+
+
+#give access to user to move to next page after entering correct username and PASSWORD
+def sqldta(request):
+    if request.method=='POST':
+        if request.POST.get('eml'):
+            email=request.POST.get('eml')
+            password=request.POST.get('pass')
+            if email=='xyz@gmail.com' and password=="123":
+               resultdisplay=mainpageinfo.objects.all()
+               return render(request,"sqldta.html",{'mainpageinfo':resultdisplay})
+            else:
+                return render(request,"login.html")
+          
+            
+        else:
+            return render(request,"login.html")
+
+
+
+
+#database connectivity
+
+#make table in database with name of table present in model.py i.e mainpageinfo
+
+#make models.py file
+from dataclasses import field
+from django.db import models
+
+class mainpageinfo(models.Model):
+    symptm1=models.CharField(max_length=200)
+    symptm2=models.CharField(max_length=200)
+    symptm3=models.CharField(max_length=200)
+    symptm4=models.CharField(max_length=200)
+    symptm5=models.CharField(max_length=200)
+    Disease=models.CharField(max_length=200,null=True)
+    date_time=models.CharField(max_length=200,null=True)
+    class Meta:
+        db_table="mainpageinfo"
+#symtom1,2--- are table column name
+
+#setting.py make database connectivity
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME':'diseasepredict',
+        'USER':'root',
+        'PASSWORD':'PASSWORD',
+        'PORT':'3306',
+        'HOST':'127.0.0.1',
+        'OPTIONS':{
+            'init_command':"SET sql_mode='STRICT_TRANS_TABLES'"
+        }
+    }
+}
+#name:diseasepredict is db name
+
+#cmd commands
+python manage.py makemigrations <name_of_project/name_of_sub_app where model.py is present>
+python manage.py migrate <name_of_project/name_of_sub_app where model.py is present>
+#to reset migration 
+python manage.py migrate <app_name> zero
+
+# run project
+cd mainpage
+python manage.py runserver
+
+#github upload
+git init 
+git config user.name "gitub user name"
+git config user.email "emailid "
+git add* (or git add)
+git remo
+git remote add origin https://github.com/abhinav1190/diseasepredict.git
+git branch -M main
+git commit -m "some init msg"
