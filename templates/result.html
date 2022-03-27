@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
@@ -6,8 +7,24 @@
 
     </head>
     <body>
+        <link rel="stylesheet" href="{% static 'mypro.css' %}">
         you are facing
 
         {{ans}}
+        
+
+        <form method="post" action="{% url 'home' %}" class="sgsinfo">
+            {% csrf_token %}
+        <label  for="nm">Name:</label><br>
+        <ul class="nm" id="nm">
+          <li><input class="fn" type="text" id="fn" name="fn" required placeholder="first name"></li>
+          <li><input class="ln" type="text" id="ln" name="ln" required placeholder="last name"></li>
+        </ul><br><br>
+        <label class="fedres" for="edres">Email address</label><br>
+        <input class="edres" type="email" name="edres" required placeholder="Email address" id="edres"><br><br>
+        <label class="fsgns" for="sgsns">Enter feedback</label><br>
+        <input class="sgsns" type="text" name="sgsns" required placeholder="please write some feedback" id="sgsns"><br><br>
+        <input type="submit" value="submit" >
+      </form>
     </body>
 </html>
