@@ -6,6 +6,7 @@ pip install virtualenvwrapper-win
 ~mkvirtualenv myaapp(or any name) / pip install --user virtualenv 
 py -m venv <name_of_env>
 .\<name_of_env)>\Scripts\activate
+cd <name_of_env>
 pip install django
 # (myprojectjango) C:\Users\abhi\djangotutorial> #it means you are in virtual name_of_env
 django-admin  startproject <name_of_project>
